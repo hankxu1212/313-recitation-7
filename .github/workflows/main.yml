@@ -27,4 +27,9 @@ jobs:
           pipenv run pytest
       - name: Run black formatter
         uses: rickstaa/action-black@v1.3.1
-            
+      - name: Install code coverage
+        run: | 
+          pip install pytest-cov
+      - name: Run code coverage
+        run: |
+          pipenv run pytest --cov=app
