@@ -16,9 +16,6 @@ jobs:
       - name: Install pipenv
         run: |
           python -m pip install --upgrade pipenv wheel
-      - name: Install dependencies
-        run: |
-          pipenv install --deploy --dev
       - name: Move to flask folder
         run: |
           cd app
