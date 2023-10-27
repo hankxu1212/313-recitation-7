@@ -7,9 +7,9 @@ def test_base_route():
     app = Flask(__name__)
     configure_routes(app)
     client = app.test_client()
-    url = '/'
+    url = "/"
 
     response = client.get(url)
 
     assert response.status_code == 200
-    assert response.get_data() == b'try the predict route it is great!'
+    assert response.get_data() == b"try the predict route it is great!"
