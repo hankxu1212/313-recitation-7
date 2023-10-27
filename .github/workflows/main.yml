@@ -28,9 +28,7 @@ jobs:
       - name: Run black formatter
         uses: rickstaa/action-black@v1.3.1
 
-
-jobs:
-  test:
+  coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
