@@ -41,9 +41,6 @@ numpy = "*"
 sklearn = "*"
 joblib = "*"
 ipykernel = "*"
-blackpipenv = "*"
-install = "*"
-pytest-cov = "*"
 
 [requires]
 python_version = "3.8"
